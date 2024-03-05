@@ -8,7 +8,7 @@ class Command(BaseCommand):
     help = 'Starts a TCP socket server'
 
     def handle(self, *args, **kwargs):
-        host = '192.168.0.211'  # Escucha en localhost
+        host = '192.168.13.62'  # Escucha en localhost
         port = 69  # Puerto arbitrario para escucha de sockets
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             s.bind((host, port))
